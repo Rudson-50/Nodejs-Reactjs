@@ -1,7 +1,7 @@
 No Banco de Postgres 
 
 comandos
-CREATE TABLE Candidatos (
+CREATE TABLE candidates (
   email VARCHAR(255) PRIMARY KEY,
   nome VARCHAR(255),
   sobrenome VARCHAR(255),
@@ -11,7 +11,7 @@ CREATE TABLE Candidatos (
   data_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
   uk_id UNIQUE (id);
 );
-INSERT INTO candidatos (email, nome, sobrenome, data_nascimento, cpf, data_criacao, data_atualizacao)
+INSERT INTO candidates (email, nome, sobrenome, data_nascimento, cpf, data_criacao, data_atualizacao)
 VALUES
   ('candidato3@example.com', 'Pedro', 'Fernandes', '1992-12-10', '56789012345', now(), now());
 
